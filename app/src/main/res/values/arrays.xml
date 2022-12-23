@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string-array name="genre">
+    <item>Select Genre</item>
+    <item>Sandbox</item>
+    <item>Real-time strategy (RTS)</item>
+    <item>Shooters (FPS and TPS)</item>
+    <item>Multiplayer online battle arena (MOBA)</item>
+    <item>Role-playing (RPG, ARPG, and More)</item>
+    <item>Simulation and sports</item>
+    <item>Puzzlers and party games</item>
+    <item>Action-adventure</item>
+    <item>Survival and horror</item>
+    <item>Platformer</item>
+</string-array></resources>

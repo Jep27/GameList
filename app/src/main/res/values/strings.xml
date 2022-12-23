@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Game List</string>
+    <string name="genre">Genre:</string>
+    <string name="name">Name:</string>
+    <string name="add_new_game">Add Game</string>
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete this game?</string>
+    <string name="cancel">Cancel</string>
+    <string name="gamename_identical_details">Please change the Game name as it has already been used</string>
+    <string name="incomplete_details">Please Complete the following details</string>
+    <string name="close">Close</string>
+    <string name="details">Details:</string>
+    <string name="rating">Rating:</string>
+    <string name="blank"></string>
+    <string name="update">Update</string>
+    <string name="update_question">Are you sure you want to update this game?</string>
+</resources>

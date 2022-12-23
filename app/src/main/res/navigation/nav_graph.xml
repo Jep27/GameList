@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gameListFragment">
+
+    <fragment
+        android:id="@+id/gameListFragment"
+        android:name="com.example.gamelist.ui.presentation.GameListFragment"
+        android:label="List of Games" >
+        <action
+            android:id="@+id/action_gameListFragment_to_gameAddFragment"
+            app:destination="@id/gameAddFragment" />
+        <action
+            android:id="@+id/action_gameListFragment_to_forageableDetailFragment"
+            app:destination="@id/gameListDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameAddFragment"
+        android:name="com.example.gamelist.ui.presentation.GameAddFragment"
+        android:label="Add Game"
+        tools:layout="@layout/game_list_add" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <action
+            android:id="@+id/action_gameAddFragment_to_gameListFragment"
+            app:destination="@id/gameListFragment" />
+        <action
+            android:id="@+id/action_gameAddFragment_to_gameListDetailsFragment"
+            app:destination="@id/gameListDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameListDetailsFragment"
+        android:name="com.example.gamelist.ui.presentation.GameListDetailsFragment"
+        android:label="Game Details"
+        tools:layout="@layout/game_list_details_fragment" >
+        <argument
+            android:name="id"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <action
+            android:id="@+id/action_gameListDetailsFragment_to_gameAddFragment"
+            app:destination="@id/gameAddFragment" />
+        <action
+            android:id="@+id/action_gameListDetailsFragment_to_gameListFragment"
+            app:destination="@id/gameListFragment" />
+    </fragment>
+
+</navigation>
